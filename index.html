@@ -55,8 +55,8 @@
       flex: 0 1 360px;
       min-width: 300px;
 
-      /* 图片下移：与左侧副标题那一行对齐 */
-      margin-top: 54px;
+      /* 关键：让右侧图片整体下移，与左侧 subtitle 那行对齐 */
+      margin-top: 58px;
     }
 
     h1{
@@ -69,19 +69,40 @@
       color: var(--muted);
       margin-bottom: 18px;
     }
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin: 14px 0 0;
+    }
 
     .hero-img{
       width: 100%;
       height: auto;
-      display:block;
+      display: block;
       border-radius: 10px;
       border: 1px solid var(--border);
-      background:#fff;
+      background: #fff;
     }
     .caption{
       font-size: 14px;
       color: var(--muted);
       margin-top: 10px;
+    }
+
+    footer{
+      border-top:1px solid var(--border);
+      padding: 16px 24px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align:center;
+      background:#fff;
+    }
+
+    /* 小屏时右侧会换行：避免下移造成奇怪空白 */
+    @media (max-width: 900px){
+      .hero-right{ margin-top: 0; }
     }
   </style>
 </head>
@@ -101,33 +122,36 @@
     <section class="hero">
       <div class="hero-left">
         <h1>Lou Shenshan</h1>
-        <div class="subtitle">
-          Jingfang (经方) Medicine · Clinical Education · Publishing &amp; Translation
+        <div class="subtitle">Jingfang (经方) Medicine · Clinical Education · Publishing &amp; Translation</div>
+
+        <!-- 保留左侧白/灰底文字框 -->
+        <div class="card">
+          <p>
+            This website presents my professional work and publications in the field of classical Jingfang medicine.
+            It is structured as an evidence-based overview for academic, publishing, and professional review,
+            including EB-1A extraordinary ability evaluation.
+          </p >
+          <p>
+            My work builds upon the clinical lineage of my father, Dr. Lou Shao-kun, and focuses on transmitting
+            classical medical knowledge to a global audience.
+          </p >
         </div>
-
-        <p>
-          This website presents my professional work and publications in the field of classical Jingfang medicine.
-          It is structured as an evidence-based overview for academic, publishing, and professional review,
-          including EB-1A extraordinary ability evaluation.
-        </p >
-
-        <p>
-          My work builds upon the clinical lineage of my father, Dr. Lou Shao-kun, and focuses on transmitting
-          classical medical knowledge to a global audience.
-        </p >
       </div>
 
       <div class="hero-right">
-        <img
-          class="hero-img"
-          src="/assets/images/un.jpg"
-          alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations"
-        />
+        <!-- 必须是 < img ...>，不能写成 < img ...>；路径用你已确认可打开的 root-absolute -->
+        < img class="hero-img" src="/assets/images/un.jpg" alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations" />
         <div class="caption">
           Heritage and transmission: with my father, Dr. Lou Shao-kun, at the United Nations.
         </div>
       </div>
     </section>
+
+    <!-- 已按你要求：Purpose of This Website 整段完全删除 -->
   </main>
+
+  <footer>
+    © Lou Shenshan · Jingfang Medicine · Academic &amp; Clinical Transmission
+  </footer>
 </body>
 </html>
