@@ -40,76 +40,49 @@
     }
 
     h1{
-      font-size: 40px;
-      margin: 8px 0 8px;
+      font-size: 44px;
+      margin: 8px 0 6px;
       letter-spacing:0.2px;
     }
     .subtitle{
-      font-size: 16px;
+      font-size: 18px;
       color: var(--muted);
       margin-bottom: 18px;
-      max-width: 860px;
+      max-width: 900px;
     }
 
-    .wide{
-      background:#fff;
-      border:1px solid var(--border);
-      border-radius:12px;
-      overflow:hidden;
-      margin-top:18px;
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 18px;
+      margin: 18px 0;
     }
+
     .wide-img{
-      width:100%;
-      height:auto;
+      width: 100%;
+      height: auto;
       display:block;
+      border-radius: 10px;
+      border: 1px solid var(--border);
       background:#fff;
+      margin-bottom: 12px;
     }
-    .wide-body{
-      padding:16px 18px 18px;
-    }
-    .wide h2{
-      font-size:20px;
-      margin:0 0 8px;
+
+    h2{
+      margin: 8px 0 6px;
+      font-size: 24px;
+      letter-spacing:0.1px;
     }
     .meta{
-      font-size:14px;
-      color:var(--muted);
-      margin:0 0 10px;
-    }
-    .divider{
-      border-top:1px solid var(--border);
-      margin:26px 0;
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 14px;
     }
 
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap:18px;
-      margin-top:18px;
+    ul{
+      margin: 8px 0 0 20px;
     }
-    @media (max-width: 860px){
-      .grid{ grid-template-columns: 1fr; }
-    }
-    .book{
-      background:#fff;
-      border:1px solid var(--border);
-      border-radius:12px;
-      overflow:hidden;
-    }
-    .book-img{
-      width:100%;
-      height:auto;
-      display:block;
-      background:#fff;
-    }
-    .book-body{
-      padding:16px 18px 18px;
-    }
-    .book h3{
-      font-size:18px;
-      margin:0 0 8px;
-    }
-    .book p{ margin:10px 0 0; }
 
     footer{
       border-top:1px solid var(--border);
@@ -138,85 +111,123 @@
     <div class="subtitle">
       A selected list of published books in the Lou Shaokun Jingfang series (娄绍昆经方系列丛书),
       including simplified Chinese, traditional Chinese, and English editions.
+      The sequence below reflects a structured learning path: from foundational narrative and clinical worldview,
+      to case-based application, then to advanced formula-and-text study of the <em>Shanghan Lun</em>.
     </div>
 
-    <section class="wide">
-      < img class="wide-img" src="/assets/images/books-jingfang-case-studies.jpg" alt="The Jingfang Case Studies and Medical Treatises of Dr. Lou Shaokun (English edition)" />
-      <div class="wide-body">
-        <h2>The Jingfang Case Studies and Medical Treatises of Dr. Lou Shaokun</h2>
-        <p class="meta">English edition · Purple Cloud Press (USA) · Published November 2024</p >
-        <p>
-          This English-language volume presents clinical case studies and major medical treatises by Dr. Lou Shaokun.
-          It has been recommended by Western practitioners as a valuable teaching resource for students and clinicians.
-        </p >
-      </div>
-    </section>
+    <!-- 1) English Case Studies -->
+    <div class="card">
+      < img class="wide-img" src="/assets/images/book-jingfang-case-studies.jpg"
+           alt="The Jingfang Case Studies and Medical Treatises of Dr. Lou Shaokun (English edition cover)" />
 
-    <div class="divider"></div>
+      <h2>The Jingfang Case Studies and Medical Treatises of Dr. Lou Shaokun</h2>
+      <p class="meta">
+        English edition · Purple Cloud Press (USA) · Published November 2024
+      </p >
+      <p>
+        This English-language volume presents clinical case studies and major medical treatises by Dr. Lou Shaokun.
+        Practitioners in the West have highlighted its detailed abdominal diagnosis records and its value as a teaching
+        resource for students and clinicians of classical formula medicine.
+      </p >
+    </div>
 
-    <section class="wide">
-      < img class="wide-img" src="/assets/images/books-zhongyi-rensheng-covers.jpg" alt="Zhongyi Rensheng (A Life Devoted to Chinese Medicine) multiple editions" />
-      <div class="wide-body">
-        <h2>A Life Devoted to Chinese Medicine: One Master Physician’s Long Engagement with Jingfang</h2>
-        <p class="meta">
-          Simplified Chinese · China Press of Traditional Chinese Medicine (China) · First published June 2012<br/>
-          Traditional Chinese · Wanderer Press (Taiwan) · First published 2016<br/>
-          Revised &amp; expanded editions published later · Total sales across editions: 100,000+
-        </p >
-        <p>
-          A foundational work documenting Dr. Lou’s clinical journey and the intellectual framework of Jingfang practice.
-          An English edition has been translated and refined and is being prepared for U.S. publication.
-        </p >
-      </div>
-    </section>
+    <!-- 2) Zhongyi Rensheng (all versions) -->
+    <div class="card">
+      < img class="wide-img" src="/assets/images/book-zhongyi-rensheng.jpg"
+           alt="Zhongyi Rensheng (A Life Devoted to Chinese Medicine) editions" />
 
-    <div class="divider"></div>
+      <h2>A Life Devoted to Chinese Medicine: One Master Physician’s Long Engagement with Jingfang</h2>
+      <p class="meta">
+        Simplified Chinese · China Press of Traditional Chinese Medicine (China) · First published June 2012<br>
+        Traditional Chinese · Wanderer Press (Taiwan) · First published 2016<br>
+        Revised & expanded editions (simplified + traditional) later published · Total sales (all Chinese editions) exceed 100,000 copies
+      </p >
+      <p>
+        A foundational work that presents the life-long clinical path and intellectual formation of Dr. Lou Shaokun,
+        and the practical development of Jingfang medicine through decades of real-world practice. The book has been
+        reprinted many times across editions and has become a widely read entry point for learners of classical formulas.
+      </p >
+      <p>
+        An English translation has been completed and refined through editorial work and is being prepared for
+        publication to introduce classical formula medicine to a broader Western audience.
+      </p >
+    </div>
 
-    <section class="grid">
-      <article class="book">
-        < img class="book-img" src="/assets/images/book-zhongyi-rensheng-3d.jpg" alt="Zhongyi Rensheng book photo" />
-        <div class="book-body">
-          <h3>Zhongyi Rensheng (中医人生)</h3>
-          <p class="meta">4 published editions (simplified/traditional; revised/expanded)</p >
-          <p>
-            Recommended starting point for learners entering the Lou Shaokun Jingfang pathway.
-          </p >
-        </div>
-      </article>
+    <!-- 3) Lou Shaokun on Classical Formulas + Case Records/Medical Notes (combined image) -->
+    <div class="card">
+      < img class="wide-img" src="/assets/images/book-jingfang-case-cn.jpg"
+           alt="Two-volume set: Lou Shaokun on Classical Formulas and Clinical Case Records & Medical Notes (Simplified Chinese)" />
 
-      <article class="book">
-        < img class="book-img" src="/assets/images/book-jingfang-yian-yihua.jpg" alt="Lou Shaokun Jingfang Case Records and Clinical Notes" />
-        <div class="book-body">
-          <h3>Jingfang Case Records &amp; Clinical Notes (经方医案医话)</h3>
-          <p class="meta">Published · China Press of Traditional Chinese Medicine</p >
-          <p>
-            A practical bridge from narrative learning to formula-pattern (方证) clinical thinking.
-          </p >
-        </div>
-      </article>
+      <h2>
+        Lou Shaokun on Classical Formulas<br>
+        Clinical Case Records & Medical Notes in Jingfang Medicine
+      </h2>
+      <p class="meta">
+        Two-volume set · Simplified Chinese · China Press of Traditional Chinese Medicine · First published March 2019<br>
+        Combined circulation exceeds 36,000 copies
+      </p >
+      <p>
+        This combined publication consists of two closely related volumes:
+        <em>Lou Shaokun on Classical Formulas</em> and
+        <em>Clinical Case Records & Medical Notes in Jingfang Medicine</em>.
+        Together, they present Dr. Lou Shaokun’s mature clinical thinking, formula-based reasoning,
+        and detailed case documentation developed over decades of practice.
+      </p >
+      <p>
+        The first volume focuses on the conceptual framework of Jingfang medicine, while the second records real clinical
+        cases and reflective medical notes, demonstrating how classical formulas are applied, adjusted, and verified in practice.
+        These works form a crucial bridge between foundational study and advanced clinical application.
+      </p >
+    </div>
 
-      <article class="book">
-        < img class="book-img" src="/assets/images/book-yifang-yizhen.jpg" alt="One Formula, One Needle: Understanding Shanghan Lun" />
-        <div class="book-body">
-          <h3>One Formula, One Needle: Understanding Shanghan Lun (一方一针解伤寒)</h3>
-          <p class="meta">Published (Chinese) · English translation in progress (target: March 2026)</p >
-          <p>
-            A structured, step-by-step approach integrating herbal formulas and acupuncture experience.
-          </p >
-        </div>
-      </article>
+    <!-- 4) One Formula One Needle -->
+    <div class="card">
+      < img class="wide-img" src="/assets/images/book-one-formula-one-needle.jpg"
+           alt="Lou Shaokun: One Formula, One Needle (Simplified Chinese cover)" />
 
-      <article class="book">
-        < img class="book-img" src="/assets/images/book-kangzhiben-65.jpg" alt="Lou Shaokun’s Commentary on the Kangzhiben Shanghanlun" />
-        <div class="book-body">
-          <h3>Commentary on the Kangzhiben Shanghanlun (讲康治本《伤寒论》)</h3>
-          <p class="meta">Simplified: China Press of TCM · Traditional (Taiwan): upcoming</p >
-          <p>
-            An in-depth commentary that sparked renewed nationwide study of the Treatise on Cold Damage.
-          </p >
-        </div>
-      </article>
-    </section>
+      <h2>One Formula, One Needle: Understanding <em>Shanghan Lun</em> Through Formulas and Acupuncture</h2>
+      <p class="meta">
+        Simplified Chinese edition · Published 2021 · English translation in progress (expected completion March 2026)
+      </p >
+      <p>
+        Building upon the clinical worldview presented in <em>A Life Devoted to Chinese Medicine</em>,
+        this work integrates decades of Jingfang practice with acupuncture experience and case-based insights.
+        It discusses over 50 formula-patterns and many practical clinical points, offering a structured bridge from theory to application.
+      </p >
+    </div>
+
+    <!-- 5) Kangzhiben Shanghanlun (commentary / course-text style) -->
+    <div class="card">
+      < img class="wide-img" src="/assets/images/book-kangzhiben-shanghanlun.jpg"
+           alt="Lou Shaokun’s Commentary on the Kangzhiben Shanghanlun cover" />
+
+      <h2>Lou Shaokun’s Commentary on the Kangzhiben <em>Shanghan Lun</em></h2>
+      <p class="meta">
+        Published December 2023 · China Press of Traditional Chinese Medicine (Beijing)<br>
+        Traditional Chinese edition (Wanderer Press, Taiwan): forthcoming
+      </p >
+      <p>
+        A major scholarly commentary that annotates and studies the <em>Shanghan Lun</em> through the Kangzhiben edition.
+        The work has sparked widespread discussion in China’s classical-formula community and has rapidly entered multiple printings.
+      </p >
+      <p>
+        This volume represents an advanced stage of study for readers who have built a foundation through
+        narrative understanding, clinical cases, and formula-pattern practice, and now seek deeper textual and methodological clarity.
+      </p >
+    </div>
+
+    <!-- Optional short "learning path" summary -->
+    <div class="card">
+      <h2>Suggested Learning Path</h2>
+      <p class="meta">A practical, layered pathway for beginners and clinicians</p >
+      <ul>
+        <li><strong>A Life Devoted to Chinese Medicine</strong> — foundation and clinical worldview</li>
+        <li><strong>Lou Shaokun on Classical Formulas</strong> — core framework and reasoning</li>
+        <li><strong>Clinical Case Records & Medical Notes</strong> — real-case verification and method</li>
+        <li><strong>One Formula, One Needle</strong> — integrated formula + acupuncture approach</li>
+        <li><strong>Commentary on the Kangzhiben Shanghan Lun</strong> — advanced text-based mastery</li>
+      </ul>
+    </div>
   </main>
 
   <footer>
