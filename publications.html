@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/assets/css/style.css" />
 
-  <!-- ✅ 只新增这一段：缩小 publications 页面所有 .wide-img 图片 -->
+  <!-- ✅ 只改这一段：限定只影响“main.container 里的 card 图片”，不会影响 Home/About/底部 -->
   <style>
-    .wide-img{
+    main.container .card img.wide-img{
       display:block;
       width:100%;
-      max-width:720px;   /* 统一缩小（你可改成 760/820，但先用 720 最稳） */
-      height:auto;       /* 保持比例 */
-      margin:14px auto;  /* 居中 */
-      object-fit:contain;/* 确保完整显示不裁切 */
+      max-width:920px;      /* ✅ 比之前大：更接近正文宽度 */
+      height:auto;
+      margin:14px auto;
+      object-fit:contain;
     }
   </style>
 </head>
