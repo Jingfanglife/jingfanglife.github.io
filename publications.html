@@ -6,16 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/assets/css/style.css" />
 
-  <!-- ✅【唯一新增】只控制 Publications 页里的书籍图片大小 -->
+  <!-- ✅ 只新增这一段：缩小 publications 页面所有 .wide-img 图片 -->
   <style>
-    /* 只作用于 publications 页面里的书籍图片 */
-    .card .wide-img {
-      display: block;
-      width: 100%;
-      max-width: 820px;     /* 以「中医人生四本」为基准宽度 */
-      height: auto;         /* 保持比例 */
-      margin: 16px auto;    /* 居中且不影响布局 */
-      object-fit: contain; /* 确保完整显示 */
+    .wide-img{
+      display:block;
+      width:100%;
+      max-width:720px;   /* 统一缩小（你可改成 760/820，但先用 720 最稳） */
+      height:auto;       /* 保持比例 */
+      margin:14px auto;  /* 居中 */
+      object-fit:contain;/* 确保完整显示不裁切 */
     }
   </style>
 </head>
@@ -45,83 +44,148 @@
       to case-based application, and finally to advanced textual study of the <em>Shanghan Lun</em>.
     </p >
 
-    <!-- Book 1 -->
+    <!-- ===================== -->
+    <!-- Book 1: English Case Studies -->
+    <!-- ===================== -->
     <div class="card">
-      < img class="wide-img"
-           src="/assets/images/book-jingfang-case-studies.jpg"
-           alt="The Jingfang Case Studies and Medical Treatises of Dr. Lou Shaokun (English edition)" />
+
+      <img
+        class="wide-img"
+        src="/assets/images/book-jingfang-case-studies.jpg"
+        alt="The Jingfang Case Studies and Medical Treatises of Dr. Lou Shaokun (English edition)"
+      />
+
       <h2>The Jingfang Case Studies and Medical Treatises of Dr. Lou Shaokun</h2>
-      <p class="meta">English edition · Purple Cloud Press (USA) · Published November 2024</p >
+
+      <p class="meta">
+        English edition · Purple Cloud Press (USA) · Published November 2024
+      </p >
+
       <p>
         This English-language volume presents clinical case studies and major medical
-        treatises by Dr. Lou Shaokun. It is widely regarded as a valuable teaching
-        resource for students and clinicians of classical formula medicine.
+        treatises by Dr. Lou Shaokun. It has been recognized by Western practitioners
+        as the first English work to provide detailed abdominal diagnosis records
+        throughout the treatment process, and is widely regarded as a valuable
+        teaching resource for students and clinicians of classical formula medicine.
       </p >
+
     </div>
 
-    <!-- Book 2 -->
+    <!-- ===================== -->
+    <!-- Book 2: Zhongyi Rensheng (Life Devoted to Chinese Medicine) -->
+    <!-- ===================== -->
     <div class="card">
-      < img class="wide-img"
-           src="/assets/images/book-zhongyi-rensheng.jpg"
-           alt="Zhongyi Rensheng - A Life Devoted to Chinese Medicine" />
+
+      <img
+        class="wide-img"
+        src="/assets/images/book-zhongyi-rensheng.jpg"
+        alt="Zhongyi Rensheng - A Life Devoted to Chinese Medicine"
+      />
+
       <h2>
         Zhongyi Rensheng<br />
         <span class="subtitle">A Life Devoted to Chinese Medicine</span>
       </h2>
+
       <p class="meta">
         Simplified & Traditional Chinese editions · China Press of Traditional Chinese Medicine /
         Wanderer Press (Taiwan)
       </p >
+
       <p>
         First published in 2012, this foundational work documents Dr. Lou Shaokun’s
-        lifelong engagement with Jingfang medicine. Total circulation has exceeded
-        100,000 copies.
+        lifelong engagement with Jingfang medicine. Across multiple editions in
+        simplified and traditional Chinese, total circulation has exceeded 100,000 copies.
+        An English translation is currently in preparation for publication.
       </p >
+
     </div>
 
-    <!-- Book 3 -->
+    <!-- ===================== -->
+    <!-- Book 3: Jingfang Case Records (Chinese) -->
+    <!-- ===================== -->
     <div class="card">
-      < img class="wide-img"
-           src="/assets/images/book-jingfang-case-cn.jpg"
-           alt="Lou Shaokun Jingfang Case Records and Medical Notes" />
-      <h2>Lou Shaokun Jingfang Case Records & Medical Notes</h2>
-      <p class="meta">Simplified Chinese · China Press of Traditional Chinese Medicine · 2019</p >
-      <p>
-        Extensive clinical case records illustrating formula–pattern diagnosis and
-        long-term treatment observation, serving as a bridge to advanced study.
-      </p >
-    </div>
 
-    <!-- Book 4 -->
-    <div class="card">
-      < img class="wide-img"
-           src="/assets/images/book-one-formula-one-needle.jpg"
-           alt="One Formula, One Needle: Understanding Shanghan Lun" />
-      <h2>One Formula, One Needle: Understanding the Shanghan Lun</h2>
+      <img
+        class="wide-img"
+        src="/assets/images/book-jingfang-case-cn.jpg"
+        alt="Lou Shaokun Jingfang Case Records and Medical Notes"
+      />
+
+      <h2>
+        Lou Shaokun Jingfang Case Records & Medical Notes
+      </h2>
+
       <p class="meta">
-        Simplified Chinese · Published 2021<br />
-        English translation in progress (expected March 2026)
+        Simplified Chinese · China Press of Traditional Chinese Medicine · Published 2019
       </p >
+
       <p>
-        Integrates classical herbal formulas with acupuncture practice, offering
-        a structured learning pathway for practitioners at different stages.
+        These volumes present extensive clinical case records illustrating
+        formula–pattern diagnosis and long-term treatment observation.
+        They serve as a core bridge between narrative foundations and advanced
+        textual study within the Jingfang learning sequence.
       </p >
+
     </div>
 
-    <!-- Book 5 -->
+    <!-- ===================== -->
+    <!-- Book 4: One Formula, One Needle -->
+    <!-- ===================== -->
     <div class="card">
-      < img class="wide-img"
-           src="/assets/images/book-kangzhiben-shanghanlun.jpg"
-           alt="Lou Shaokun’s Commentary on the Kangzhiben Shanghan Lun" />
-      <h2>Lou Shaokun’s Commentary on the Kangzhiben Shanghan Lun</h2>
+
+      <img
+        class="wide-img"
+        src="/assets/images/book-one-formula-one-needle.jpg"
+        alt="One Formula, One Needle: Understanding Shanghan Lun"
+      />
+
+      <h2>
+        One Formula, One Needle: Understanding the Shanghan Lun
+      </h2>
+
       <p class="meta">
-        Simplified Chinese · Published 2023<br />
-        Traditional Chinese edition forthcoming (Wanderer Press, Taiwan)
+        Simplified Chinese · China Press of Traditional Chinese Medicine · Published 2021<br />
+        English translation in progress (expected completion: March 2026)
       </p >
+
       <p>
-        A comprehensive commentary synthesizing decades of textual research and
-        clinical experience, widely influential in the classical-formula community.
+        Building upon decades of clinical experience, this work integrates
+        classical herbal formulas with acupuncture practice. It offers a
+        structured pathway for learners at different stages, from beginners
+        to experienced clinicians, emphasizing practical application rooted
+        in long-term clinical verification.
       </p >
+
+    </div>
+
+    <!-- ===================== -->
+    <!-- Book 5: Kangzhiben Shanghan Lun -->
+    <!-- ===================== -->
+    <div class="card">
+
+      <img
+        class="wide-img"
+        src="/assets/images/book-kangzhiben-shanghanlun.jpg"
+        alt="Lou Shaokun’s Commentary on the Kangzhiben Shanghan Lun"
+      />
+
+      <h2>
+        Lou Shaokun’s Commentary on the Kangzhiben Shanghan Lun
+      </h2>
+
+      <p class="meta">
+        Simplified Chinese · China Press of Traditional Chinese Medicine · Published 2023<br />
+        Traditional Chinese edition forthcoming (Taiwan, Wanderer Press)
+      </p >
+
+      <p>
+        This comprehensive commentary represents the culmination of decades
+        of textual research and clinical practice. Since its release, the book
+        has gone through multiple printings and has sparked renewed nationwide
+        study of the <em>Shanghan Lun</em> within the classical-formula community.
+      </p >
+
     </div>
 
   </main>
