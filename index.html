@@ -7,99 +7,95 @@
 
   <style>
     :root{
-      --bg:#f4f4f4;
-      --paper:#ffffff;
+      --bg:#fafafa;
       --text:#222;
-      --muted:#666;
+      --muted:#555;
+      --card:#f1f1f1;
       --border:#ddd;
     }
-    *{box-sizing:border-box}
     body{
       margin:0;
       font-family: Georgia, "Times New Roman", serif;
       background:var(--bg);
       color:var(--text);
-      line-height:1.75;
+      line-height:1.7;
     }
     header{
-      background:var(--paper);
+      background:#fff;
       border-bottom:1px solid var(--border);
       padding:18px 36px;
     }
     nav a{
       margin-right:18px;
       text-decoration:none;
-      color:#111;
+      color:#222;
       font-weight:600;
     }
     nav a:hover{ text-decoration:underline; }
 
     .container{
-      max-width:1100px;
-      margin:0 auto;
-      padding:34px 20px 60px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 26px 24px 60px;
     }
 
     .hero{
       display:flex;
-      gap:36px;
+      gap:26px;
       align-items:flex-start;
       justify-content:space-between;
-      margin-top:10px;
+      flex-wrap:wrap;
+      margin-top:8px;
     }
-    .hero-left{ flex:1.1; min-width:280px; }
-    .hero-right{ flex:0.9; min-width:260px; }
+    .hero-left{
+      flex: 1 1 460px;
+      min-width: 320px;
+    }
+    .hero-right{
+      flex: 0 1 360px;
+      min-width: 300px;
+      margin-top: 58px; /* ✅ 右侧整体下移：与左侧 subtitle 行对齐 */
+    }
 
     h1{
-      font-size:46px;
-      margin:0 0 12px;
+      font-size: 44px;
+      margin: 8px 0 6px;
       letter-spacing:0.2px;
     }
     .subtitle{
-      font-size:20px;
-      color:var(--muted);
-      margin:0 0 18px;
+      font-size: 18px;
+      color: var(--muted);
+      margin-bottom: 18px;
     }
-
     .card{
-      background:var(--paper);
-      border:1px solid var(--border);
-      border-radius:12px;
-      padding:18px 18px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin: 14px 0 0;
     }
 
-    figure{ margin:0; }
     .hero-img{
-      width:100%;
-      height:auto;
+      width: 100%;
+      height: auto;
       display:block;
-      border-radius:12px;
-      border:1px solid var(--border);
+      border-radius: 10px;
+      border: 1px solid var(--border);
       background:#fff;
     }
-    figcaption{
-      font-size:14px;
-      color:var(--muted);
-      margin-top:10px;
-    }
-
-    h2{
-      font-size:28px;
-      margin:38px 0 10px;
+    .caption{
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 10px;
     }
 
     footer{
-      color:var(--muted);
-      font-size:13px;
-      padding:20px;
-      text-align:center;
       border-top:1px solid var(--border);
-      background:var(--paper);
-    }
-
-    @media (max-width: 900px){
-      .hero{flex-direction:column;}
-      h1{font-size:40px;}
+      padding: 16px 24px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align:center;
+      background:#fff;
     }
   </style>
 </head>
@@ -108,20 +104,20 @@
   <header>
     <nav>
       <a href=" ">Home</a >
-      <a href="/about.html">About</a >
-      <a href="/publications.html">Publications</a >
-      <a href="/academic.html">Academic</a >
-      <a href="/contact.html">Contact</a >
+      <a href="about.html">About</a >
+      <a href="publications.html">Publications</a >
+      <a href="academic.html">Academic</a >
+      <a href="contact.html">Contact</a >
     </nav>
   </header>
 
-  <div class="container">
+  <main class="container">
     <section class="hero">
       <div class="hero-left">
         <h1>Lou Shenshan</h1>
-        <p class="subtitle">Jingfang (经方) Medicine · Clinical Education · Publishing & Translation</p >
+        <div class="subtitle">Jingfang (经方) Medicine · Clinical Education · Publishing &amp; Translation</div>
 
-        <div class="card">
+        <div class="section-text">
           <p>
             This website presents my professional work and publications in the field of classical Jingfang medicine.
             It is structured as an evidence-based overview for academic, publishing, and professional review,
@@ -135,25 +131,16 @@
       </div>
 
       <div class="hero-right">
-        <figure>
-          <!-- ✅ 关键：绝对路径 + 文件名小写 un.jpg -->
-          < img class="hero-img" src="/assets/images/un.jpg" alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations" />
-          <figcaption>
-            Heritage and transmission: with my father, Dr. Lou Shao-kun, at the United Nations.
-          </figcaption>
-        </figure>
+        < img class="hero-img" src="/assets/images/un.jpg" alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations" />
+        <div class="caption">
+          Heritage and transmission: with my father, Dr. Lou Shao-kun, at the United Nations.
+        </div>
       </div>
     </section>
+  </main>
 
-    <h2>Purpose of This Website</h2>
-    <div class="card">
-      <p>
-        This site serves as a structured presentation of published works, educational activities, and international engagement related to Jingfang medicine.
-        All materials are organized to demonstrate sustained contributions, professional recognition, and original impact within the field.
-      </p >
-    </div>
-  </div>
-
-  <footer>© Lou Shenshan · Jingfang Medicine · Academic & Clinical Transmission</footer>
+  <footer>
+    © Lou Shenshan · Jingfang Medicine · Academic &amp; Clinical Transmission
+  </footer>
 </body>
 </html>
