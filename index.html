@@ -13,6 +13,7 @@
       --card:#f1f1f1;
       --border:#ddd;
     }
+
     body{
       margin:0;
       font-family: Georgia, "Times New Roman", serif;
@@ -20,89 +21,94 @@
       color:var(--text);
       line-height:1.7;
     }
+
     header{
       background:#fff;
       border-bottom:1px solid var(--border);
       padding:18px 36px;
     }
+
     nav a{
       margin-right:18px;
       text-decoration:none;
       color:#222;
       font-weight:600;
     }
-    nav a:hover{ text-decoration:underline; }
+
+    nav a:hover{
+      text-decoration:underline;
+    }
 
     .container{
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 26px 24px 60px;
+      max-width:1000px;
+      margin:0 auto;
+      padding:26px 24px 60px;
     }
 
     .hero{
       display:flex;
-      gap:26px;
+      gap:28px;
       align-items:flex-start;
       justify-content:space-between;
       flex-wrap:wrap;
       margin-top:8px;
     }
-    .hero-left{
-      flex: 1 1 460px;
-      min-width: 320px;
-    }
-    .hero-right{
-      flex: 0 1 360px;
-      min-width: 300px;
 
-      /* 关键：让右侧图片整体下移，与左侧 subtitle 那行对齐 */
-      margin-top: 58px;
+    .hero-left{
+      flex:1 1 460px;
+      min-width:320px;
+    }
+
+    .hero-right{
+      flex:0 1 360px;
+      min-width:300px;
+      /* 关键：让图片整体下移，与左侧副标题对齐 */
+      margin-top:62px;
     }
 
     h1{
-      font-size: 44px;
-      margin: 8px 0 6px;
+      font-size:44px;
+      margin:8px 0 6px;
       letter-spacing:0.2px;
     }
+
     .subtitle{
-      font-size: 18px;
-      color: var(--muted);
-      margin-bottom: 18px;
+      font-size:18px;
+      color:var(--muted);
+      margin-bottom:18px;
     }
+
     .card{
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px 18px;
-      margin: 14px 0 0;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:16px 18px;
+      margin-top:14px;
+      max-width:720px;
     }
 
     .hero-img{
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: #fff;
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:10px;
+      border:1px solid var(--border);
+      background:#fff;
     }
+
     .caption{
-      font-size: 14px;
-      color: var(--muted);
-      margin-top: 10px;
+      font-size:14px;
+      color:var(--muted);
+      margin-top:10px;
     }
 
     footer{
       border-top:1px solid var(--border);
-      padding: 16px 24px;
-      color: var(--muted);
-      font-size: 13px;
+      padding:16px 24px;
+      color:var(--muted);
+      font-size:13px;
       text-align:center;
       background:#fff;
-    }
-
-    /* 小屏时右侧会换行：避免下移造成奇怪空白 */
-    @media (max-width: 900px){
-      .hero-right{ margin-top: 0; }
     }
   </style>
 </head>
@@ -122,32 +128,33 @@
     <section class="hero">
       <div class="hero-left">
         <h1>Lou Shenshan</h1>
-        <div class="subtitle">Jingfang (经方) Medicine · Clinical Education · Publishing &amp; Translation</div>
+        <div class="subtitle">
+          Jingfang (经方) Medicine · Clinical Education · Publishing &amp; Translation
+        </div>
 
-        <!-- 保留左侧白/灰底文字框 -->
         <div class="card">
           <p>
-            This website presents my professional work and publications in the field of classical Jingfang medicine.
-            It is structured as an evidence-based overview for academic, publishing, and professional review,
-            including EB-1A extraordinary ability evaluation.
+            This website presents my professional work and publications in the field of
+            classical Jingfang medicine. It is structured as an evidence-based overview for
+            academic, publishing, and professional review, including EB-1A extraordinary
+            ability evaluation.
           </p >
           <p>
-            My work builds upon the clinical lineage of my father, Dr. Lou Shao-kun, and focuses on transmitting
-            classical medical knowledge to a global audience.
+            My work builds upon the clinical lineage of my father, Dr. Lou Shao-kun, and
+            focuses on transmitting classical medical knowledge to a global audience.
           </p >
         </div>
       </div>
 
       <div class="hero-right">
-        <!-- 必须是 < img ...>，不能写成 < img ...>；路径用你已确认可打开的 root-absolute -->
-        < img class="hero-img" src="/assets/images/un.jpg" alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations" />
+        < img class="hero-img"
+             src="/assets/images/un.jpg"
+             alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations" />
         <div class="caption">
           Heritage and transmission: with my father, Dr. Lou Shao-kun, at the United Nations.
         </div>
       </div>
     </section>
-
-    <!-- 已按你要求：Purpose of This Website 整段完全删除 -->
   </main>
 
   <footer>
