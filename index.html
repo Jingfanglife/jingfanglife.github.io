@@ -28,38 +28,38 @@
 
     .container {
       max-width: 1200px;
-      margin: 60px auto;
+      margin: 70px auto;
       padding: 0 40px;
     }
 
     .hero {
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
-      gap: 60px;
+      gap: 70px;
       align-items: flex-start;
     }
 
     h1 {
       font-size: 42px;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
 
     .subtitle {
       font-size: 18px;
       color: #555;
-      margin-bottom: 28px;
+      margin-bottom: 34px;
     }
 
     .hero-text p {
       font-size: 16px;
       line-height: 1.7;
       color: #333;
-      max-width: 520px;
+      max-width: 540px;
     }
 
-    /* 👇 核心：控制右侧图片整体下移 */
+    /* ⬇⬇⬇ 关键：右侧图片整体明显下移 */
     .hero-image {
-      margin-top: 58px;   /* ← 这一行就是“下移高度”，可微调 */
+      margin-top: 90px;   /* ← 比上一版再低一档，视觉已拉开 */
     }
 
     .hero-image img {
@@ -72,15 +72,15 @@
     .caption {
       font-size: 14px;
       color: #555;
-      margin-top: 10px;
-      line-height: 1.4;
+      margin-top: 12px;
+      line-height: 1.45;
     }
 
     footer {
       text-align: center;
       font-size: 13px;
       color: #777;
-      margin: 80px 0 30px;
+      margin: 90px 0 30px;
     }
 
     @media (max-width: 900px) {
@@ -89,7 +89,7 @@
       }
 
       .hero-image {
-        margin-top: 20px;
+        margin-top: 30px;
       }
     }
   </style>
@@ -121,11 +121,12 @@
       <p>
         My work builds upon the clinical lineage of my father, Dr. Lou Shao-kun,
         and focuses on the academic interpretation, clinical transmission,
-        and international dissemination of classical Jingfang medicine.
+        and international dissemination of classical Jingfang medicine
+        to a global audience.
       </p >
     </div>
 
-    <!-- 右侧图片 -->
+    <!-- 右侧图片（已整体下移） -->
     <div class="hero-image">
       < img src="/assets/images/un.jpg"
            alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations">
