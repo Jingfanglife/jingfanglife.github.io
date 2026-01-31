@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About | Lou Shenshan</title>
   <style>
     body{
@@ -10,133 +10,129 @@
       font-family: Georgia, "Times New Roman", serif;
       background:#fafafa;
       color:#222;
-      line-height:1.75;
+      line-height:1.8;
     }
     header{
-      background:#fff;
-      border-bottom:1px solid #ddd;
-      padding:18px 32px;
+      background:#ffffff;
+      border-bottom:1px solid #e0e0e0;
+      padding:18px 24px;
     }
-    header .site-title{
-      font-size:20px;
+    .nav{
+      max-width:1000px;
+      margin:0 auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .brand{
+      font-size:18px;
       font-weight:700;
-      margin:0 0 6px 0;
     }
-    nav a{
-      color:#222;
+    .nav a{
       text-decoration:none;
-      margin-right:18px;
+      color:#222;
+      margin-left:16px;
       font-size:14px;
     }
-    nav a:hover{ text-decoration:underline; }
+    .nav a:hover{ text-decoration:underline; }
 
-    .container{
-      max-width:980px;
+    main{
+      max-width:1000px;
       margin:0 auto;
-      padding:36px 32px 60px;
-      background:#fafafa;
+      padding:40px 24px 70px;
     }
     h1{
-      margin:0 0 18px 0;
-      font-size:42px;
-      letter-spacing:0.2px;
+      font-size:40px;
+      margin-bottom:14px;
     }
-    h2{
-      margin:34px 0 12px 0;
-      font-size:26px;
+    p{
+      font-size:17px;
+      margin-bottom:14px;
     }
-    p{ margin:0 0 14px 0; }
-
-    figure{
-      margin:22px 0 26px 0;
-      padding:0;
+    .card{
+      background:#ffffff;
+      border:1px solid #e6e6e6;
+      border-radius:14px;
+      padding:22px;
+      margin:24px 0;
     }
-    figure img{
-      display:block;
+    .photo{
+      margin:24px 0;
+      text-align:center;
+    }
+    .photo img{
       max-width:100%;
       height:auto;
+      border-radius:12px;
       border:1px solid #ddd;
-      background:#fff;
+      display:block;
+      margin:0 auto;
     }
-    figcaption{
-      font-size:14px;
-      color:#444;
-      margin-top:10px;
-    }
-
-    .note{
+    .caption{
       font-size:14px;
       color:#555;
       margin-top:10px;
     }
-
     footer{
-      border-top:1px solid #ddd;
-      background:#fff;
-      padding:18px 32px;
-      color:#666;
+      border-top:1px solid #e0e0e0;
+      background:#ffffff;
+      padding:18px 24px;
       font-size:13px;
+      color:#666;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <div class="site-title">Lou Shenshan</div>
-    <nav>
+
+<header>
+  <div class="nav">
+    <div class="brand">Lou Shenshan</div>
+    <div>
       <a href=" ">Home</a >
       <a href="about.html">About</a >
       <a href="publications.html">Publications</a >
-      <a href="evidence.html">EB-1A Evidence Index</a >
       <a href="contact.html">Contact</a >
-    </nav>
-  </header>
+    </div>
+  </div>
+</header>
 
-  <main class="container">
-    <h1>About Lou Shenshan</h1>
+<main>
+  <h1>About Lou Shenshan</h1>
 
-    <p>
-      Lou Shenshan is a practitioner, researcher, and translator specializing in classical Jingfang (经方) medicine.
-      Her work focuses on academic interpretation, clinical transmission, and international dissemination of
-      traditional Chinese medical knowledge, particularly within the Jingfang lineage.
-    </p >
+  <p>
+    Lou Shenshan is a practitioner, researcher, and translator specializing in classical Jingfang (经方) medicine.
+    Her work focuses on academic interpretation, clinical transmission, and international dissemination of
+    traditional Chinese medical knowledge.
+  </p >
 
+  <div class="card">
     <p>
       She builds upon the clinical and scholarly legacy of her father, Dr. Lou Shao-kun, a widely recognized authority
-      in Jingfang medicine in China, while developing an independent body of work oriented toward global medical education
+      in Jingfang medicine, while developing an independent body of work oriented toward global medical education
       and cross-cultural scholarship.
     </p >
 
-    <!-- ✅ KEY FIX: no space after "<"  and the filename matches EXACTLY -->
-    <figure>
-      < img src="assets/images/heritage-un.JPG"
-           alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations" />
-      <figcaption>
-        Heritage and transmission: Lou Shenshan with her father, Dr. Lou Shao-kun, at the United Nations — representing
-        lineage, mentorship, and international engagement.
-      </figcaption>
-    </figure>
+    <div class="photo">
+      < img src="assets/images/un.jpg"
+           alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations">
+      <div class="caption">
+        Lou Shenshan with her father, Dr. Lou Shao-kun, at the United Nations — representing heritage, lineage,
+        and international academic transmission.
+      </div>
+    </div>
+  </div>
 
-    <h2>Academic Focus and Professional Scope</h2>
+  <p>
+    Her academic and professional activities include clinical education, scholarly writing, and the translation
+    of specialized Jingfang texts into English, with the goal of making classical Chinese medicine accessible
+    to an international audience.
+  </p >
+</main>
 
-    <p>
-      Her professional activities include classical medical research, clinical education, academic writing, and the
-      translation of specialized Jingfang texts into English. She is actively involved in presenting traditional Chinese
-      medical theory in a form accessible to international scholars, practitioners, and publishers.
-    </p >
+<footer>
+  © Lou Shenshan · Jingfang Medicine · Academic & Clinical Transmission
+</footer>
 
-    <p class="note">
-      This website is structured as an evidence-based overview of published works, educational activities, and professional
-      contributions for academic and professional review, including EB-1A extraordinary ability evaluation.
-    </p >
-  </main>
-
-  <footer>
-    © <span id="y"></span> Lou Shenshan · Jingfang Medicine · Clinical Education · Publishing & Translation
-  </footer>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
