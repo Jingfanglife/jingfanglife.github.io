@@ -6,15 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/assets/css/style.css" />
 
-  <!-- ✅ 只改这一段：限定只影响“main.container 里的 card 图片”，不会影响 Home/About/底部 -->
+  <!-- ONLY change: shrink + unify all book images on this page -->
   <style>
-    main.container .card img.wide-img{
+    .wide-img{
       display:block;
       width:100%;
-      max-width:920px;      /* ✅ 比之前大：更接近正文宽度 */
+      max-width:760px;     /* keep image about the same “text width” */
+      max-height:520px;    /* prevent any image from becoming too tall */
       height:auto;
-      margin:14px auto;
-      object-fit:contain;
+      margin:14px auto 18px;
+      object-fit:contain;  /* show full image without cropping */
+    }
+    @media (max-width:820px){
+      .wide-img{
+        max-width:100%;
+        max-height:420px;
+      }
     }
   </style>
 </head>
@@ -51,7 +58,7 @@
 
       <img
         class="wide-img"
-        src="/assets/images/book-jingfang-case-studies.jpg"
+        src="https://jingfanglife.com/assets/images/book-jingfang-case-studies.jpg"
         alt="The Jingfang Case Studies and Medical Treatises of Dr. Lou Shaokun (English edition)"
       />
 
@@ -78,7 +85,7 @@
 
       <img
         class="wide-img"
-        src="/assets/images/book-zhongyi-rensheng.jpg"
+        src="https://jingfanglife.com/assets/images/book-zhongyi-rensheng.jpg"
         alt="Zhongyi Rensheng - A Life Devoted to Chinese Medicine"
       />
 
@@ -108,7 +115,7 @@
 
       <img
         class="wide-img"
-        src="/assets/images/book-jingfang-case-cn.jpg"
+        src="https://jingfanglife.com/assets/images/book-jingfang-case-cn.jpg"
         alt="Lou Shaokun Jingfang Case Records and Medical Notes"
       />
 
@@ -136,7 +143,7 @@
 
       <img
         class="wide-img"
-        src="/assets/images/book-one-formula-one-needle.jpg"
+        src="https://jingfanglife.com/assets/images/book-one-formula-one-needle.jpg"
         alt="One Formula, One Needle: Understanding Shanghan Lun"
       />
 
@@ -166,7 +173,7 @@
 
       <img
         class="wide-img"
-        src="/assets/images/book-kangzhiben-shanghanlun.jpg"
+        src="https://jingfanglife.com/assets/images/book-kangzhiben-shanghanlun.jpg"
         alt="Lou Shaokun’s Commentary on the Kangzhiben Shanghan Lun"
       />
 
