@@ -2,83 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact | Lou Shenshan</title>
-
-  <style>
-    :root{
-      --bg:#fafafa;
-      --text:#222;
-      --muted:#555;
-      --card:#f1f1f1;
-      --border:#ddd;
-    }
-    body{
-      margin:0;
-      font-family: Georgia, "Times New Roman", serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.7;
-    }
-    header{
-      background:#fff;
-      border-bottom:1px solid var(--border);
-      padding:18px 36px;
-    }
-    nav a{
-      margin-right:18px;
-      text-decoration:none;
-      color:#222;
-      font-weight:600;
-    }
-    nav a:hover{ text-decoration:underline; }
-
-    .container{
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 26px 24px 60px;
-    }
-
-    h1{
-      font-size: 40px;
-      margin: 8px 0 8px;
-      letter-spacing:0.2px;
-    }
-    .subtitle{
-      font-size: 16px;
-      color: var(--muted);
-      margin-bottom: 18px;
-      max-width: 860px;
-    }
-
-    .card{
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px 18px;
-      margin: 14px 0 0;
-    }
-    .label{ font-weight:700; }
-
-    footer{
-      border-top:1px solid var(--border);
-      padding: 16px 24px;
-      color: var(--muted);
-      font-size: 13px;
-      text-align:center;
-      background:#fff;
-    }
-  </style>
+  <title>Publications | Lou Shenshan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
+
+  <!-- ===== Navigation ===== -->
   <header>
-    <nav>
+    <nav class="nav">
       <a href=" ">Home</a >
-      <a href="about.html">About</a >
-      <a href="publications.html">Publications</a >
-      <a href="academic.html">Academic</a >
-      <a href="contact.html">Contact</a >
+      <a href="/about.html">About</a >
+      <a href="/publications.html" class="active">Publications</a >
+      <a href="/academic.html">Academic</a >
+      <a href="/contact.html">Contact</a >
     </nav>
   </header>
 
@@ -101,7 +39,7 @@
 
       <img
         class="wide-img"
-        src="https://jingfanglife.com/assets/images/book-jingfang-case-studies.jpg"
+        src="/assets/images/book-jingfang-case-studies.jpg"
         alt="The Jingfang Case Studies and Medical Treatises of Dr. Lou Shaokun (English edition)"
       />
 
@@ -128,7 +66,7 @@
 
       <img
         class="wide-img"
-        src="https://jingfanglife.com/assets/images/book-zhongyi-rensheng.jpg"
+        src="/assets/images/book-zhongyi-rensheng.jpg"
         alt="Zhongyi Rensheng - A Life Devoted to Chinese Medicine"
       />
 
@@ -158,7 +96,7 @@
 
       <img
         class="wide-img"
-        src="https://jingfanglife.com/assets/images/book-jingfang-case-cn.jpg"
+        src="/assets/images/book-jingfang-case-cn.jpg"
         alt="Lou Shaokun Jingfang Case Records and Medical Notes"
       />
 
@@ -186,7 +124,7 @@
 
       <img
         class="wide-img"
-        src="https://jingfanglife.com/assets/images/book-one-formula-one-needle.jpg"
+        src="/assets/images/book-one-formula-one-needle.jpg"
         alt="One Formula, One Needle: Understanding Shanghan Lun"
       />
 
@@ -216,7 +154,7 @@
 
       <img
         class="wide-img"
-        src="https://jingfanglife.com/assets/images/book-kangzhiben-shanghanlun.jpg"
+        src="/assets/images/book-kangzhiben-shanghanlun.jpg"
         alt="Lou Shaokun’s Commentary on the Kangzhiben Shanghan Lun"
       />
 
@@ -241,7 +179,9 @@
   </main>
 
   <!-- ===== Footer ===== -->
-    © Lou Shenshan · Jingfang Medicine · Academic &amp; Clinical Transmission
+  <footer class="footer">
+    © Lou Shenshan · Jingfang Medicine · Academic & Clinical Transmission
   </footer>
+
 </body>
 </html>
