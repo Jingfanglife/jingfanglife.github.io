@@ -2,186 +2,231 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Publications | Lou Shenshan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <style>
+    :root{
+      --bg:#fafafa;
+      --text:#222;
+      --muted:#555;
+      --card:#f1f1f1;
+      --border:#ddd;
+    }
+
+    body{
+      margin:0;
+      font-family: Georgia, "Times New Roman", serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+    }
+
+    header{
+      background:#fff;
+      border-bottom:1px solid var(--border);
+      padding:18px 36px;
+    }
+
+    nav a{
+      margin-right:18px;
+      text-decoration:none;
+      color:#222;
+      font-weight:600;
+    }
+
+    nav a:hover{
+      text-decoration:underline;
+    }
+
+    .container{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 32px 24px 60px;
+    }
+
+    h1{
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .intro{
+      max-width: 820px;
+      color: var(--muted);
+      margin-bottom: 36px;
+    }
+
+    .book{
+      margin-bottom: 54px;
+    }
+
+    .book-card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    /* 🔒 关键：统一图片显示规则 */
+    .book-img{
+      width: 100%;
+      max-width: 760px;
+      height: auto;
+      display: block;
+      margin: 0 auto 18px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+      object-fit: contain;
+    }
+
+    h2{
+      font-size: 26px;
+      margin: 12px 0 6px;
+    }
+
+    .meta{
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    footer{
+      border-top:1px solid var(--border);
+      padding: 16px 24px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align:center;
+      background:#fff;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- ===== Navigation ===== -->
-  <header>
-    <nav class="nav">
-      <a href=" ">Home</a >
-      <a href="/about.html">About</a >
-      <a href="/publications.html" class="active">Publications</a >
-      <a href="/academic.html">Academic</a >
-      <a href="/contact.html">Contact</a >
-    </nav>
-  </header>
+<header>
+  <nav>
+    <a href=" ">Home</a >
+    <a href="about.html">About</a >
+    <a href="publications.html">Publications</a >
+    <a href="academic.html">Academic</a >
+    <a href="contact.html">Contact</a >
+  </nav>
+</header>
 
-  <!-- ===== Main Content ===== -->
-  <main class="container">
+<main class="container">
 
-    <h1>Publications</h1>
+  <h1>Publications</h1>
+  <p class="intro">
+    A selected list of published books in the Lou Shaokun Jingfang series (娄绍昆经方系列丛书),
+    including simplified Chinese, traditional Chinese, and English editions.
+    The sequence below reflects a structured learning path from foundational narrative,
+    to case-based clinical application, and finally to advanced textual study of the <em>Shanghan Lun</em>.
+  </p >
 
-    <p class="intro">
-      A selected list of published books in the Lou Shaokun Jingfang series (娄绍昆经方系列丛书),
-      including simplified Chinese, traditional Chinese, and English editions.
-      The sequence below reflects a structured learning path: from foundational narrative,
-      to case-based application, and finally to advanced textual study of the <em>Shanghan Lun</em>.
-    </p >
-
-    <!-- ===================== -->
-    <!-- Book 1: English Case Studies -->
-    <!-- ===================== -->
-    <div class="card">
-
-      <img
-        class="wide-img"
-        src="/assets/images/book-jingfang-case-studies.jpg"
-        alt="The Jingfang Case Studies and Medical Treatises of Dr. Lou Shaokun (English edition)"
-      />
+  <!-- 1. English Jingfang Case Studies -->
+  <section class="book">
+    <div class="book-card">
+      < img class="book-img"
+           src="/assets/images/book-jingfang-case-studies.jpg"
+           alt="The Jingfang Case Studies and Medical Treatises of Dr. Lou Shaokun (English edition)" />
 
       <h2>The Jingfang Case Studies and Medical Treatises of Dr. Lou Shaokun</h2>
-
-      <p class="meta">
+      <div class="meta">
         English edition · Purple Cloud Press (USA) · Published November 2024
-      </p >
-
+      </div>
       <p>
-        This English-language volume presents clinical case studies and major medical
-        treatises by Dr. Lou Shaokun. It has been recognized by Western practitioners
-        as the first English work to provide detailed abdominal diagnosis records
-        throughout the treatment process, and is widely regarded as a valuable
-        teaching resource for students and clinicians of classical formula medicine.
+        This English-language volume presents clinical case studies and major medical treatises by
+        Dr. Lou Shaokun. Western practitioners have highlighted its detailed abdominal diagnosis
+        records and its value as a teaching resource for students and clinicians of classical
+        formula medicine.
       </p >
-
     </div>
+  </section>
 
-    <!-- ===================== -->
-    <!-- Book 2: Zhongyi Rensheng (Life Devoted to Chinese Medicine) -->
-    <!-- ===================== -->
-    <div class="card">
+  <!-- 2. Zhongyi Rensheng -->
+  <section class="book">
+    <div class="book-card">
+      < img class="book-img"
+           src="/assets/images/book-zhongyi-rensheng.jpg"
+           alt="Zhongyi Rensheng – A Life Devoted to Chinese Medicine (multiple editions)" />
 
-      <img
-        class="wide-img"
-        src="/assets/images/book-zhongyi-rensheng.jpg"
-        alt="Zhongyi Rensheng - A Life Devoted to Chinese Medicine"
-      />
-
-      <h2>
-        Zhongyi Rensheng<br />
-        <span class="subtitle">A Life Devoted to Chinese Medicine</span>
-      </h2>
-
-      <p class="meta">
-        Simplified & Traditional Chinese editions · China Press of Traditional Chinese Medicine /
-        Wanderer Press (Taiwan)
-      </p >
-
+      <h2>Zhongyi Rensheng<br/>A Life Devoted to Chinese Medicine</h2>
+      <div class="meta">
+        Simplified & Traditional Chinese editions · China Press of Traditional Chinese Medicine · Wanderer Press (Taiwan)
+      </div>
       <p>
-        First published in 2012, this foundational work documents Dr. Lou Shaokun’s
-        lifelong engagement with Jingfang medicine. Across multiple editions in
-        simplified and traditional Chinese, total circulation has exceeded 100,000 copies.
+        First published in 2012, this foundational work documents Dr. Lou Shaokun’s lifelong engagement
+        with Jingfang medicine. Across multiple editions, total circulation has exceeded 100,000 copies.
         An English translation is currently in preparation for publication.
       </p >
-
     </div>
+  </section>
 
-    <!-- ===================== -->
-    <!-- Book 3: Jingfang Case Records (Chinese) -->
-    <!-- ===================== -->
-    <div class="card">
+  <!-- 3. Jingfang Case Records & Medical Notes -->
+  <section class="book">
+    <div class="book-card">
+      < img class="book-img"
+           src="/assets/images/book-jingfang-case-cn.jpg"
+           alt="Lou Shaokun Jingfang Case Records and Medical Notes" />
 
-      <img
-        class="wide-img"
-        src="/assets/images/book-jingfang-case-cn.jpg"
-        alt="Lou Shaokun Jingfang Case Records and Medical Notes"
-      />
-
-      <h2>
-        Lou Shaokun Jingfang Case Records & Medical Notes
-      </h2>
-
-      <p class="meta">
+      <h2>Lou Shaokun Jingfang Case Records &amp; Medical Notes</h2>
+      <div class="meta">
         Simplified Chinese · China Press of Traditional Chinese Medicine · Published 2019
-      </p >
-
+      </div>
       <p>
-        These volumes present extensive clinical case records illustrating
-        formula–pattern diagnosis and long-term treatment observation.
-        They serve as a core bridge between narrative foundations and advanced
-        textual study within the Jingfang learning sequence.
+        These volumes present extensive clinical case records illustrating formula–pattern diagnosis
+        and long-term treatment observation. They serve as a core bridge between narrative foundations
+        and advanced textual study within the Jingfang learning sequence.
       </p >
-
     </div>
+  </section>
 
-    <!-- ===================== -->
-    <!-- Book 4: One Formula, One Needle -->
-    <!-- ===================== -->
-    <div class="card">
+  <!-- 4. One Formula, One Needle -->
+  <section class="book">
+    <div class="book-card">
+      < img class="book-img"
+           src="/assets/images/book-one-formula-one-needle.jpg"
+           alt="One Formula, One Needle: Understanding the Shanghan Lun" />
 
-      <img
-        class="wide-img"
-        src="/assets/images/book-one-formula-one-needle.jpg"
-        alt="One Formula, One Needle: Understanding Shanghan Lun"
-      />
-
-      <h2>
-        One Formula, One Needle: Understanding the Shanghan Lun
-      </h2>
-
-      <p class="meta">
-        Simplified Chinese · China Press of Traditional Chinese Medicine · Published 2021<br />
-        English translation in progress (expected completion: March 2026)
-      </p >
-
+      <h2>One Formula, One Needle<br/>Understanding the Shanghan Lun</h2>
+      <div class="meta">
+        Simplified Chinese · China Press of Traditional Chinese Medicine · Published 2021<br/>
+        English translation in progress · Expected completion: March 2026
+      </div>
       <p>
-        Building upon decades of clinical experience, this work integrates
-        classical herbal formulas with acupuncture practice. It offers a
-        structured pathway for learners at different stages, from beginners
-        to experienced clinicians, emphasizing practical application rooted
-        in long-term clinical verification.
+        Building upon decades of clinical experience, this work integrates classical herbal formulas
+        with acupuncture practice. It offers a structured pathway for learners at different stages,
+        emphasizing practical application rooted in long-term clinical verification.
       </p >
-
     </div>
+  </section>
 
-    <!-- ===================== -->
-    <!-- Book 5: Kangzhiben Shanghan Lun -->
-    <!-- ===================== -->
-    <div class="card">
+  <!-- 5. Kangzhiben Shanghanlun -->
+  <section class="book">
+    <div class="book-card">
+      < img class="book-img"
+           src="/assets/images/book-kangzhiben-shanghanlun.jpg"
+           alt="Lou Shaokun’s Commentary on the Kangzhiben Shanghanlun" />
 
-      <img
-        class="wide-img"
-        src="/assets/images/book-kangzhiben-shanghanlun.jpg"
-        alt="Lou Shaokun’s Commentary on the Kangzhiben Shanghan Lun"
-      />
-
-      <h2>
-        Lou Shaokun’s Commentary on the Kangzhiben Shanghan Lun
-      </h2>
-
-      <p class="meta">
-        Simplified Chinese · China Press of Traditional Chinese Medicine · Published 2023<br />
-        Traditional Chinese edition forthcoming (Taiwan, Wanderer Press)
-      </p >
-
+      <h2>Lou Shaokun’s Commentary on the Kangzhiben Shanghanlun</h2>
+      <div class="meta">
+        Simplified Chinese · China Press of Traditional Chinese Medicine · Published December 2023<br/>
+        Traditional Chinese edition forthcoming · Wanderer Press (Taiwan)
+      </div>
       <p>
-        This comprehensive commentary represents the culmination of decades
-        of textual research and clinical practice. Since its release, the book
-        has gone through multiple printings and has sparked renewed nationwide
-        study of the <em>Shanghan Lun</em> within the classical-formula community.
+        This landmark commentary systematically studies the Kangzhiben edition of the
+        <em>Shanghan Lun</em>, sparking a new nationwide wave of classical-formula study and
+        establishing an important reference for future scholarship.
       </p >
-
     </div>
+  </section>
 
-  </main>
+</main>
 
-  <!-- ===== Footer ===== -->
-  <footer class="footer">
-    © Lou Shenshan · Jingfang Medicine · Academic & Clinical Transmission
-  </footer>
+<footer>
+  © Lou Shenshan · Jingfang Medicine · Academic &amp; Clinical Transmission
+</footer>
 
 </body>
 </html>
