@@ -13,7 +13,6 @@
       --card:#f1f1f1;
       --border:#ddd;
     }
-
     body{
       margin:0;
       font-family: Georgia, "Times New Roman", serif;
@@ -21,23 +20,18 @@
       color:var(--text);
       line-height:1.7;
     }
-
     header{
       background:#fff;
       border-bottom:1px solid var(--border);
       padding:18px 36px;
     }
-
     nav a{
       margin-right:18px;
       text-decoration:none;
       color:#222;
       font-weight:600;
     }
-
-    nav a:hover{
-      text-decoration:underline;
-    }
+    nav a:hover{ text-decoration:underline; }
 
     .container{
       max-width:1000px;
@@ -47,22 +41,20 @@
 
     .hero{
       display:flex;
-      gap:28px;
+      gap:26px;
       align-items:flex-start;
       justify-content:space-between;
       flex-wrap:wrap;
       margin-top:8px;
     }
-
     .hero-left{
       flex:1 1 460px;
       min-width:320px;
     }
-
     .hero-right{
       flex:0 1 360px;
       min-width:300px;
-      /* 关键：让图片整体下移，与左侧副标题对齐 */
+      /* 关键：图片整体下移，与副标题行对齐 */
       margin-top:62px;
     }
 
@@ -71,7 +63,6 @@
       margin:8px 0 6px;
       letter-spacing:0.2px;
     }
-
     .subtitle{
       font-size:18px;
       color:var(--muted);
@@ -84,7 +75,6 @@
       border-radius:10px;
       padding:16px 18px;
       margin-top:14px;
-      max-width:720px;
     }
 
     .hero-img{
@@ -95,7 +85,6 @@
       border:1px solid var(--border);
       background:#fff;
     }
-
     .caption{
       font-size:14px;
       color:var(--muted);
@@ -134,22 +123,23 @@
 
         <div class="card">
           <p>
-            This website presents my professional work and publications in the field of
-            classical Jingfang medicine. It is structured as an evidence-based overview for
-            academic, publishing, and professional review, including EB-1A extraordinary
-            ability evaluation.
+            This website presents my professional work and publications in the field of classical Jingfang medicine.
+            It is structured as an evidence-based overview for academic, publishing, and professional review,
+            including EB-1A extraordinary ability evaluation.
           </p >
           <p>
-            My work builds upon the clinical lineage of my father, Dr. Lou Shao-kun, and
-            focuses on transmitting classical medical knowledge to a global audience.
+            My work builds upon the clinical lineage of my father, Dr. Lou Shao-kun,
+            and focuses on transmitting classical medical knowledge to a global audience.
           </p >
         </div>
       </div>
 
       <div class="hero-right">
-        < img class="hero-img"
-             src="/assets/images/un.jpg"
-             alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations" />
+        <img
+          class="hero-img"
+          src="https://jingfanglife.com/assets/images/un.jpg?v=3"
+          alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations"
+        />
         <div class="caption">
           Heritage and transmission: with my father, Dr. Lou Shao-kun, at the United Nations.
         </div>
