@@ -2,122 +2,158 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lou Shenshan | Jingfang Medicine</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
-    body {
-      margin: 0;
-      font-family: "Times New Roman", Georgia, serif;
-      background: #f5f6f7;
-      color: #222;
+    :root{
+      --bg:#f4f4f4;
+      --paper:#ffffff;
+      --text:#222;
+      --muted:#666;
+      --border:#ddd;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Georgia, "Times New Roman", serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.75;
+    }
+    header{
+      background:var(--paper);
+      border-bottom:1px solid var(--border);
+      padding:18px 36px;
+    }
+    nav a{
+      margin-right:18px;
+      text-decoration:none;
+      color:#111;
+      font-weight:600;
+    }
+    nav a:hover{ text-decoration:underline; }
+
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:34px 20px 60px;
     }
 
-    nav {
-      background: #e9eaec;
-      padding: 14px 40px;
-      font-size: 16px;
+    .hero{
+      display:flex;
+      gap:36px;
+      align-items:flex-start;
+      justify-content:space-between;
+      margin-top:10px;
+    }
+    .hero-left{ flex:1.1; min-width:280px; }
+    .hero-right{ flex:0.9; min-width:260px; }
+
+    h1{
+      font-size:46px;
+      margin:0 0 12px;
+      letter-spacing:0.2px;
+    }
+    .subtitle{
+      font-size:20px;
+      color:var(--muted);
+      margin:0 0 18px;
     }
 
-    nav a {
-      margin-right: 24px;
-      text-decoration: none;
-      color: #222;
+    .card{
+      background:var(--paper);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:18px 18px;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 60px auto;
-      padding: 0 40px;
+    figure{ margin:0; }
+    .hero-img{
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:#fff;
+    }
+    figcaption{
+      font-size:14px;
+      color:var(--muted);
+      margin-top:10px;
     }
 
-    .hero {
-      display: flex;
-      gap: 60px;
-      align-items: flex-start;
+    h2{
+      font-size:28px;
+      margin:38px 0 10px;
     }
 
-    .hero-text {
-      flex: 1;
+    footer{
+      color:var(--muted);
+      font-size:13px;
+      padding:20px;
+      text-align:center;
+      border-top:1px solid var(--border);
+      background:var(--paper);
     }
 
-    .hero-text h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 30px;
-    }
-
-    .hero-text p {
-      line-height: 1.7;
-      font-size: 17px;
-      margin-bottom: 18px;
-    }
-
-    .hero-image {
-      flex: 1;
-      margin-top: 46px; /* 👈 关键：整体下移，和左边 Jingfang 行平齐 */
-    }
-
-    .hero-image img {
-      width: 100%;
-      max-width: 420px;
-      display: block;
-    }
-
-    .caption {
-      font-size: 14px;
-      color: #555;
-      margin-top: 10px;
-      line-height: 1.5;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 13px;
-      color: #666;
-      margin: 80px 0 30px;
+    @media (max-width: 900px){
+      .hero{flex-direction:column;}
+      h1{font-size:40px;}
     }
   </style>
 </head>
 
 <body>
-
-  <nav>
-    <a href=" ">Home</a >
-    <a href="/about.html">About</a >
-    <a href="#">Publications</a >
-    <a href="#">Academic</a >
-    <a href="#">Contact</a >
-  </nav>
+  <header>
+    <nav>
+      <a href=" ">Home</a >
+      <a href="/about.html">About</a >
+      <a href="/publications.html">Publications</a >
+      <a href="/academic.html">Academic</a >
+      <a href="/contact.html">Contact</a >
+    </nav>
+  </header>
 
   <div class="container">
-    <div class="hero">
-
-      <!-- 左侧文字 -->
-      <div class="hero-text">
+    <section class="hero">
+      <div class="hero-left">
         <h1>Lou Shenshan</h1>
+        <p class="subtitle">Jingfang (经方) Medicine · Clinical Education · Publishing & Translation</p >
 
-        <div class="subtitle">
-          Jingfang (经方) Medicine · Clinical Education · Publishing & Translation
+        <div class="card">
+          <p>
+            This website presents my professional work and publications in the field of classical Jingfang medicine.
+            It is structured as an evidence-based overview for academic, publishing, and professional review,
+            including EB-1A extraordinary ability evaluation.
+          </p >
+          <p>
+            My work builds upon the clinical lineage of my father, Dr. Lou Shao-kun, and focuses on transmitting
+            classical medical knowledge to a global audience.
+          </p >
         </div>
-
-        <p>
-          My work builds upon the clinical lineage of my father, Dr. Lou Shao-kun,
-          and focuses on the academic interpretation, clinical transmission, and
-          international dissemination of classical Jingfang medicine.
-        </p >
       </div>
 
-      <!-- 右侧图片 -->
-      <div class="hero-image">
-        <img
-          src="https://jingfanglife.com/assets/images/un.jpg"
-          alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations"
-        />
-        <div class="caption">
-          Heritage and transmission: with my father, Dr. Lou Shao-kun,
+      <div class="hero-right">
+        <figure>
+          <!-- ✅ 关键：绝对路径 + 文件名小写 un.jpg -->
+          < img class="hero-img" src="/assets/images/un.jpg" alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations" />
+          <figcaption>
+            Heritage and transmission: with my father, Dr. Lou Shao-kun, at the United Nations.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <h2>Purpose of This Website</h2>
+    <div class="card">
+      <p>
+        This site serves as a structured presentation of published works, educational activities, and international engagement related to Jingfang medicine.
+        All materials are organized to demonstrate sustained contributions, professional recognition, and original impact within the field.
+      </p >
+    </div>
+  </div>
+
+  <footer>© Lou Shenshan · Jingfang Medicine · Academic & Clinical Transmission</footer>
+</body>
+</html>
