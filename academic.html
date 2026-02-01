@@ -41,44 +41,74 @@
 
     h1{
       font-size:40px;
-      margin:8px 0 10px;
+      margin:8px 0 8px;
+      letter-spacing:0.2px;
     }
     .subtitle{
       font-size:16px;
       color:var(--muted);
-      margin-bottom:20px;
+      margin-bottom:18px;
       max-width:860px;
-    }
-
-    h2{
-      font-size:22px;
-      margin:26px 0 12px;
     }
 
     .card{
       background:var(--card);
       border:1px solid var(--border);
       border-radius:10px;
-      padding:20px 22px;
-      margin-top:18px;
+      padding:18px 20px;
+      margin-top:14px;
+    }
+
+    h2{
+      font-size:22px;
+      margin:20px 0 10px;
+      letter-spacing:0.1px;
+    }
+    h3{
+      font-size:18px;
+      margin:16px 0 8px;
+      letter-spacing:0.1px;
     }
 
     .photo{
-      margin:20px 0 6px;
-      text-align:center;
+      margin:14px 0 6px;
     }
     .photo img{
-      max-width:100%;
+      width:100%;
       height:auto;
       display:block;
-      margin:0 auto;
       border-radius:8px;
     }
     .caption{
       font-size:13px;
       color:var(--muted);
-      margin:10px auto 0;
-      max-width:860px;
+      margin-top:10px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap:14px;
+      margin-top:12px;
+    }
+    .gallery-item{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:10px;
+    }
+    .gallery-item img{
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:8px;
+    }
+    .gallery-item .caption{
+      margin-top:8px;
+    }
+
+    @media (max-width: 780px){
+      .gallery{ grid-template-columns: 1fr; }
     }
 
     footer{
@@ -95,7 +125,7 @@
 <body>
   <header>
     <nav>
-      <a href=" ">Home</a >
+      <a href="index.html">Home</a >
       <a href="about.html">About</a >
       <a href="publications.html">Publications</a >
       <a href="academic.html">Academic</a >
@@ -110,72 +140,109 @@
     </div>
 
     <div class="card">
-
       <h2>Academic Focus</h2>
       <p>
-        Lou Shenshan’s academic work focuses on the theoretical structure, clinical methodology,
-        and contemporary transmission of classical Jingfang (经方) medicine.
-        Her research integrates close textual study with long-term clinical verification.
+        My academic work centers on the study, interpretation, and clinical transmission of classical Jingfang (经方)
+        medicine, with an emphasis on clear theoretical structure and reproducible clinical reasoning.
       </p >
       <p>
-        Rather than treating Jingfang as isolated prescriptions, her work emphasizes internal diagnostic logic,
-        formula classification, and reproducible clinical reasoning.
+        Rather than treating Jingfang as isolated prescriptions, I focus on its internal diagnostic logic, formula
+        classification, and clinically testable decision pathways—linking classical source study with long-term
+        clinical verification.
+      </p >
+
+      <h2>The Jingfang System</h2>
+      <p>
+        My approach highlights Jingfang as a coherent medical system: pattern differentiation, formula families,
+        and structured treatment strategy. This includes clinical methodology (diagnostic structure and follow-through),
+        as well as careful translation and cross-cultural explanation for international audiences.
       </p >
 
       <h2>International Public Lectures</h2>
 
       <div class="photo">
-        < img src="/assets/images/canada.jpg" alt="International lecture at Canadian City Hall" />
+        <img
+          src="https://jingfanglife.com/assets/images/canada.jpg"
+          alt="International public lecture at Canadian City Hall (2025)"
+        />
         <div class="caption">
-          International public lecture delivered at a Canadian city hall (2025), introducing classical Jingfang medicine
-          in a civic and cross-cultural context.
+          International public lecture at a Canadian city hall (2025).
         </div>
       </div>
 
       <div class="photo">
-        < img src="/assets/images/canada2.jpg" alt="Academic lecture presentation in Canada" />
+        <img
+          src="https://jingfanglife.com/assets/images/canada2.jpg"
+          alt="Academic lecture presentation in Canada"
+        />
         <div class="caption">
-          Academic lecture in Canada addressing classical diagnostic structure and formula-based clinical reasoning.
+          Academic lecture presentation in Canada—introducing diagnostic structure and formula-based reasoning.
         </div>
       </div>
 
-      <h2>Conference Lectures and Academic Forums</h2>
+      <h2>Conference Lectures and Academic Engagement</h2>
 
-      <div class="photo">
-        < img src="/assets/images/2024.jpg" alt="International Jingfang Conference 2024" />
-        <div class="caption">
-          Lecture delivered at the 2024 International Jingfang Conference on classical clinical methodology.
+      <div class="gallery">
+        <div class="gallery-item">
+          <img
+            src="https://jingfanglife.com/assets/images/un.jpg"
+            alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations"
+          />
+          <div class="caption">
+            United Nations setting—heritage, lineage, and international academic transmission.
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://jingfanglife.com/assets/images/2024.jpg"
+            alt="International Jingfang conference lecture (2024)"
+          />
+          <div class="caption">
+            International Jingfang conference lecture (2024).
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://jingfanglife.com/assets/images/20242.jpg"
+            alt="International Jingfang conference recognition (2024)"
+          />
+          <div class="caption">
+            Academic engagement and conference recognition (2024).
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://jingfanglife.com/assets/images/14.jpg"
+            alt="Jingfang academic lecture slide (conference)"
+          />
+          <div class="caption">
+            Lecture materials—Jingfang clinical reasoning and structured diagnosis.
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://jingfanglife.com/assets/images/15.jpg"
+            alt="Jingfang academic lecture (conference podium)"
+          />
+          <div class="caption">
+            Conference lecture—clinical methodology and formula classification.
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://jingfanglife.com/assets/images/xihu.JPG"
+            alt="Jingfang academic lecture (West Lake conference)"
+          />
+          <div class="caption">
+            Academic lecture at a professional conference (West Lake).
+          </div>
         </div>
       </div>
-
-      <div class="photo">
-        < img src="/assets/images/20242.jpg" alt="Lecture on abdominal diagnosis" />
-        <div class="caption">
-          Conference lecture on the clinical importance of abdominal diagnosis (腹诊) in classical Chinese medicine.
-        </div>
-      </div>
-
-      <div class="photo">
-        < img src="/assets/images/14.jpg" alt="National Jingfang academic forum lecture" />
-        <div class="caption">
-          Invited lecture at a national Jingfang academic forum on the clinical application of classical formula categories.
-        </div>
-      </div>
-
-      <div class="photo">
-        < img src="/assets/images/15.jpg" alt="Academic podium lecture" />
-        <div class="caption">
-          Academic podium lecture presenting structured Jingfang diagnostic reasoning.
-        </div>
-      </div>
-
-      <div class="photo">
-        < img src="/assets/images/xihu.JPG" alt="West Lake Jingfang Academic Conference" />
-        <div class="caption">
-          Invited lecture at the West Lake Jingfang Academic Conference on inheritance and clinical application of classical formulas.
-        </div>
-      </div>
-
     </div>
   </main>
 
