@@ -54,7 +54,8 @@
     .hero-right{
       flex:0 1 360px;
       min-width:300px;
-      margin-top:692px;
+      /* ✅ 关键：整体再下移一点，让照片从名字下面下来，并与左侧正文更齐 */
+      margin-top:92px;
     }
 
     h1{
@@ -76,17 +77,14 @@
       margin-top:14px;
     }
 
-   .hero-img{
-    width:100%;
-    max-height:300px; 
-    object-fit:contain;
-    display:block;
-    border-radius:10px;
-}
-    .caption{
-      font-size:14px;
-      color:var(--muted);
-      margin-top:10px;
+    .hero-img{
+      width:100%;
+      max-height:300px;      /* ✅ 再小一点：高度接近左侧文字卡片 */
+      object-fit:contain;    /* ✅ 不裁切、不变形 */
+      display:block;
+      border-radius:10px;
+      border:none;           /* ✅ 去掉白色边框 */
+      background:transparent;
     }
 
     footer{
@@ -120,26 +118,25 @@
         </div>
 
         <div class="card">
-        <p>
-  My work centers on the study, interpretation, and clinical transmission of
-  classical Jingfang (经方) medicine, with an emphasis on evidence-based structure
-  and long-term clinical verification.
-</p >
-
-<p>
-  Building upon the clinical lineage of my father, Dr. Lou Shao-kun, I focus on
-  presenting classical medical knowledge in a form accessible to international
-  scholars, practitioners, and publishers.
-</p >
+          <p>
+            My work centers on the study, interpretation, and clinical transmission of
+            classical Jingfang (经方) medicine, with an emphasis on evidence-based structure
+            and long-term clinical verification.
+          </p >
+          <p>
+            Building upon the clinical lineage of my father, Dr. Lou Shao-kun, I focus on
+            presenting classical medical knowledge in a form accessible to international
+            scholars, practitioners, and publishers.
+          </p >
         </div>
       </div>
 
       <div class="hero-right">
         <img
           class="hero-img"
-          src="https://jingfanglife.com/assets/images/lou.jpg?v=3"
+          src="/assets/images/lou.jpg"
+          alt="Lou Shenshan portrait"
         />
-    
       </div>
     </section>
   </main>
