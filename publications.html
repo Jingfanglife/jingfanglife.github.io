@@ -2,20 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Publications | Lou Shenshan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <style>
+    :root{
+      --bg:#fafafa;
+      --text:#222;
+      --muted:#555;
+      --card:#f1f1f1;
+      --border:#ddd;
+    }
+    body{
+      margin:0;
+      font-family: Georgia, "Times New Roman", serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+    }
+    header{
+      background:#fff;
+      border-bottom:1px solid var(--border);
+      padding:18px 36px;
+    }
+    nav a{
+      margin-right:18px;
+      text-decoration:none;
+      color:#222;
+      font-weight:600;
+    }
+    nav a:hover{ text-decoration:underline; }
+
+    .container{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 26px 24px 60px;
+    }
+
+    h1{
+      font-size: 40px;
+      margin: 8px 0 8px;
+      letter-spacing:0.2px;
+    }
+
+    .intro{
+      font-size: 16px;
+      color: var(--muted);
+      margin-bottom: 18px;
+      max-width: 860px;
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin: 14px 0 0;
+    }
+
+    /* ✅ 保持你原来的图片用法（class="wide-img" 不动），只做 Contact 同款“卡片内自适应”显示 */
+    .wide-img{
+      display:block;
+      width:100%;
+      height:auto;
+      border-radius: 8px;
+      margin: 0 0 12px 0;
+    }
+
+    h2{
+      font-size: 22px;
+      margin: 6px 0 6px;
+      letter-spacing:0.1px;
+    }
+
+    .subtitle{
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .meta{
+      font-size: 14px;
+      color: var(--muted);
+      margin: 6px 0 10px;
+    }
+
+    footer{
+      border-top:1px solid var(--border);
+      padding: 16px 24px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align:center;
+      background:#fff;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- ===== Navigation ===== -->
+  <!-- ===== Navigation (Contact 同款) ===== -->
   <header>
-    <nav class="nav">
+    <nav>
       <a href=" ">Home</a >
-      <a href="/about.html>About</a >
-      <a href="/publications.html>Publications</a >
-      <a href="/academic.html>Academic</a >
+      <a href="/about.html">About</a >
+      <a href="/publications.html">Publications</a >
+      <a href="/academic.html">Academic</a >
       <a href="/contact.html">Contact</a >
     </nav>
   </header>
@@ -76,7 +167,7 @@
       </h2>
 
       <p class="meta">
-        Simplified & Traditional Chinese editions · China Press of Traditional Chinese Medicine /
+        Simplified &amp; Traditional Chinese editions · China Press of Traditional Chinese Medicine /
         Wanderer Press (Taiwan)
       </p >
 
@@ -101,7 +192,7 @@
       />
 
       <h2>
-        Lou Shaokun Jingfang Case Records & Medical Notes
+        Lou Shaokun Jingfang Case Records &amp; Medical Notes
       </h2>
 
       <p class="meta">
@@ -178,9 +269,9 @@
 
   </main>
 
-  <!-- ===== Footer ===== -->
-  <footer class="footer">
-    © Lou Shenshan · Jingfang Medicine · Academic & Clinical Transmission
+  <!-- ===== Footer (Contact 同款) ===== -->
+  <footer>
+    © Lou Shenshan · Jingfang Medicine · Academic &amp; Clinical Transmission
   </footer>
 
 </body>
