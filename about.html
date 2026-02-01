@@ -1,118 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About | Lou Shenshan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body {
-      margin: 0;
-      padding: 0;
+    :root{
+      --bg:#fafafa;
+      --text:#222;
+      --muted:#555;
+      --card:#f1f1f1;
+      --border:#ddd;
+    }
+    body{
+      margin:0;
       font-family: Georgia, "Times New Roman", serif;
-      background: #fafafa;
-      color: #222;
-      line-height: 1.7;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+    }
+    header{
+      background:#fff;
+      border-bottom:1px solid var(--border);
+      padding:18px 36px;
+    }
+    nav a{
+      margin-right:18px;
+      text-decoration:none;
+      color:#222;
+      font-weight:600;
+    }
+    nav a:hover{ text-decoration:underline; }
+
+    .container{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 26px 24px 60px;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 20px;
+    h1{
+      font-size: 40px;
+      margin: 8px 0 8px;
+      letter-spacing:0.2px;
     }
-
-    h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      font-size: 26px;
-      margin-top: 50px;
-      margin-bottom: 16px;
-    }
-
-    p {
-      font-size: 18px;
+    .subtitle{
+      font-size: 16px;
+      color: var(--muted);
       margin-bottom: 18px;
+      max-width: 860px;
     }
 
-    .photo {
-      margin: 40px 0;
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin: 14px 0 0;
+    }
+
+    .photo{
+      margin: 12px 0 10px;
       text-align: center;
     }
-
-    .photo img {
+    .photo img{
       max-width: 100%;
       height: auto;
       display: block;
       margin: 0 auto;
+      border-radius: 8px;
     }
-
-    .caption {
-      font-size: 14px;
-      color: #555;
+    .caption{
+      font-size: 13px;
+      color: var(--muted);
       margin-top: 10px;
     }
 
-    footer {
-      margin-top: 80px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-      font-size: 14px;
-      color: #666;
-      text-align: center;
+    h2{
+      font-size: 22px;
+      margin: 18px 0 10px;
+      letter-spacing:0.1px;
+    }
+
+    footer{
+      border-top:1px solid var(--border);
+      padding: 16px 24px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align:center;
+      background:#fff;
     }
   </style>
 </head>
 
 <body>
+  <header>
+    <nav>
+      <a href=" ">Home</a >
+      <a href="/about.html">About</a >
+      <a href="/publications.html">Publications</a >
+      <a href="/academic.html">Academic</a >
+      <a href="/contact.html">Contact</a >
+    </nav>
+  </header>
 
-  <div class="container">
-
+  <main class="container">
     <h1>About Lou Shenshan</h1>
-
-    <p>
-      Lou Shenshan is a practitioner, researcher, and translator specializing in classical Jingfang (经方) medicine.
-      Her work focuses on academic interpretation, clinical transmission, and the international dissemination of
-      traditional Chinese medical knowledge.
-    </p >
-
-    <p>
-      She builds upon the clinical and scholarly legacy of her father, Dr. Lou Shao-kun, a widely recognized authority
-      in Jingfang medicine in China, while developing an independent body of work oriented toward global medical
-      education and cross-cultural scholarship.
-    </p >
-
-    <!-- ✅ 图片：联合国照片（已确认路径） -->
-    <div class="photo">
-      <img
-        src="https://jingfanglife.com/assets/images/un.jpg"
-        alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations">
-      <div class="caption">
-        Lou Shenshan with her father, Dr. Lou Shao-kun, at the United Nations —
-        representing heritage, lineage, and international academic transmission.
-      </div>
+    <div class="subtitle">
+      Practitioner, researcher, and translator specializing in classical Jingfang (经方) medicine,
+      with a focus on academic interpretation, clinical transmission, and international dissemination.
     </div>
 
-    <h2>Academic Focus and Professional Scope</h2>
+    <div class="card">
+      <p>
+        Lou Shenshan is a practitioner, researcher, and translator specializing in classical Jingfang (经方) medicine.
+        Her work focuses on academic interpretation, clinical transmission, and the international dissemination of
+        traditional Chinese medical knowledge.
+      </p >
 
-    <p>
-      Her professional activities include classical medical research, clinical education, scholarly writing,
-      and the translation of specialized Jingfang texts into English.
-    </p >
+      <p>
+        She builds upon the clinical and scholarly legacy of her father, Dr. Lou Shao-kun, a widely recognized authority
+        in Jingfang medicine in China, while developing an independent body of work oriented toward global medical
+        education and cross-cultural scholarship.
+      </p >
 
-    <p>
-      She is actively engaged in presenting traditional Chinese medical theory in a form accessible to international
-      scholars, practitioners, and publishers, emphasizing evidence-based structure, historical accuracy,
-      and clinical applicability.
-    </p >
+      <div class="photo">
+        <img
+          src="https://jingfanglife.com/assets/images/un.jpg"
+          alt="Lou Shenshan with Dr. Lou Shao-kun at the United Nations"
+        />
+        <div class="caption">
+          Lou Shenshan with her father, Dr. Lou Shao-kun, at the United Nations — representing heritage, lineage, and
+          international academic transmission.
+        </div>
+      </div>
 
-    <footer>
-      © Lou Shenshan · Jingfang Medicine · Academic & Clinical Transmission
-    </footer>
+      <h2>Academic Focus and Professional Scope</h2>
 
-  </div>
+      <p>
+        Her professional activities include classical medical research, clinical education, scholarly writing,
+        and the translation of specialized Jingfang texts into English.
+      </p >
 
+      <p>
+        She is actively engaged in presenting traditional Chinese medical theory in a form accessible to international
+        scholars, practitioners, and publishers, emphasizing evidence-based structure, historical accuracy,
+        and clinical applicability.
+      </p >
+    </div>
+  </main>
+
+  <footer>
+    © Lou Shenshan · Jingfang Medicine · Academic &amp; Clinical Transmission
+  </footer>
 </body>
 </html>
