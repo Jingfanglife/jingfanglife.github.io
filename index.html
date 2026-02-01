@@ -77,14 +77,15 @@
       margin-top:14px;
     }
 
-    .hero-img{
-      width:100%;
-      height:auto;
-      display:block;
-      border-radius:10px;
-      border:1px solid var(--border);
-      background:#fff;
-    }
+   .hero-img{
+    width:100%;
+    max-height:420px;      /* 关键：限制最大高度 */
+    object-fit:contain;    /* 保证不裁切、不变形 */
+    display:block;
+    border-radius:10px;
+    border:1px solid var(--border);
+    background:#fff;
+}
     .caption{
       font-size:14px;
       color:var(--muted);
